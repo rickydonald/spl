@@ -1,0 +1,336 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-image: url("https://res.cloudinary.com/spaceloopx/image/upload/v1622392621/bg_cover_f3nggu.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.wrapper {
+  margin: 0.5rem 0;
+}
+.container {
+  width: 85%;
+  margin: auto;
+  height: auto;
+  border-radius: 10px;
+
+  background: #fff;
+}
+
+/* Header Work */
+.logo {
+  display: flex;
+  align-items: center;
+  height: 25vh;
+  width: 95%;
+  margin: auto;
+}
+.logo img {
+  margin-bottom: 10px;
+  margin-right: 3rem;
+}
+
+.logo h4 {
+  background: #00a2ff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: inline-flex;
+  width: 45%;
+  text-align: center;
+  justify-content: center;
+}
+
+.title_header {
+  flex: 1;
+}
+
+.winners {
+  background: #00a2ff;
+  color: #fff;
+  padding: 10px 20px;
+  width: 30%;
+  border-radius: 10px;
+}
+.winners h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  margin-bottom: 10px;
+}
+.winners p {
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+main {
+  width: 100%;
+}
+
+/* Section - Teams */
+#teams {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  height: 70vh;
+  flex-direction: column;
+}
+
+#teams .heading {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-decoration: underline #00a2ff 3.5px;
+  text-underline-offset: 5px;
+}
+
+.box_col_1 {
+  margin-bottom: 20px;
+}
+.box_col_1,
+.box_col_2 {
+  display: flex;
+  height: auto;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.box_1,
+.box_2 {
+  background: #000;
+  color: white;
+  padding: 20px;
+  border-radius: 25px;
+  text-align: center;
+  width: 40%;
+  line-height: 1.5rem;
+}
+
+.box_1 h1,
+.box_2 h1 {
+  margin-bottom: 10px;
+}
+
+/* Section - Points table */
+#points_table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  height: 60vh;
+  flex-direction: column;
+}
+
+.pt_head {
+  color: #000;
+  font-size: 2rem;
+  text-decoration: underline #00a2ff 3px;
+  text-underline-offset: 5px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 1000px;
+}
+
+tr,
+th,
+td,
+table {
+  border: 2px rgb(0, 0, 0) solid;
+  border-collapse: collapse;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+th {
+  font-weight: 700;
+  padding: 10px;
+}
+td {
+  padding: 20px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* Section - 3 */
+#matches {
+  height: auto;
+  padding: 20px 0;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+.ma_head {
+  text-decoration: underline #00a2ff 3px;
+  text-underline-offset: 5px;
+  font-size: 1.5rem;
+}
+
+.fixtures {
+  display: flex;
+}
+
+.fix_col_1,
+.fix_col_2,
+.fix_col_3,
+.fix_col_4 {
+  margin: 10px 0;
+}
+
+.fix {
+  color: #fff;
+  background: #000;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 10px;
+  width: 90%;
+  line-height: 1.5rem;
+}
+.fix h2 {
+  margin-bottom: 10px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+/* Footer */
+.footer-wrapper {
+  background: black;
+}
+footer {
+  display: flex;
+  height: 18vh;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+footer h1 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: white;
+  font-size: 14px;
+  text-underline-offset: 3px;
+}
+
+footer h4 {
+  font-weight: 500;
+}
+
+.ftext {
+  line-height: 1.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .wrapper {
+    margin: none;
+  }
+
+  /* Header */
+  .logo {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    text-align: center;
+    justify-content: center;
+  }
+  .logo img {
+    width: 40%;
+  }
+  .winners {
+    width: 90%;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  /* Teams */
+  #teams {
+    height: auto;
+    padding: 20px 0;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .box_col_1,
+  .box_col_2 {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+  }
+  .box_1,
+  .box_2 {
+    width: 100%;
+  }
+  .box_1 {
+    margin-bottom: 10px;
+  }
+
+  /* Points Table */
+  #points_table {
+    height: auto;
+    padding: 20px 0;
+    width: 90%;
+    margin: auto;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  /* Fixture */
+  #matches {
+    height: auto;
+    padding: 20px 0;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .fix_col_1,
+  .fix_col_2,
+  .fix_col_3,
+  .fix_col_4 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .fix {
+    width: 90%;
+  }
+  .fixtures {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    text-align: center;
+    justify-content: center;
+  }
+}
