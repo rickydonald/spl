@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;500;700;900&display=swap");
+
+* {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+#navbar {
+  height: 12vh;
+}
+#container-width {
+  width: 95%;
+  margin: auto;
+}
+.nav-item {
+  padding: 0 8px;
+}
+.nav-link,
+.dropdown-item {
+  font-weight: 500;
+}
+
+#navbarSupportedContent {
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 991px) {
+  #navbarSupportedContent {
+    margin: 20px 0 20px 0;
+  }
+}
+
+/* Hero */
+#slider {
+  height: 88vh;
+  background-image: linear-gradient(
+      rgba(46, 46, 46, 0.6),
+      rgba(46, 46, 46, 0.6)
+    ),
+    url("/assets/img/stadium.webp");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#slider .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: inherit;
+  width: 90%;
+  margin: auto;
+}
+
+#slider .text-container h1 {
+  font-size: 5rem;
+  color: #fff;
+  margin-bottom: 2px;
+}
+#slider .text-container p {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+}
+
+#slider .cta-btns {
+  margin-top: 10px;
+}
+
+.cta-btns .cta-btn {
+  background-color: #e3f2fd;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+.cta-btns .cta-btn .bi-arrow-down-circle-fill {
+  margin-left: 2px;
+}
+
+.cta-btns .cta-btn:hover {
+  background-color: #81c0ee;
+}
+
+/* Teams */
+#teams {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  #teams {
+    height: auto;
+    padding: 2.5rem 0;
+  }
+}
+
+#teams #col {
+  background-color: #e3f2fd;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#teams .container h2 {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+#teams #col h4 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+#teams #col p {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 5px;
+}
+
+/* Points Table (Summary) */
+#points-table {
+  background-color: #e3f2fd;
+  height: auto;
+  padding: 2.5rem 0;
+}
+
+#points-table .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: inherit;
+  width: 90%;
+  margin: auto;
+}
+
+#points-table table {
+  text-align: center;
+}
+#points-table .cta-btns {
+  margin: 0 0 20px 0;
+}
+
+#points-table table th {
+  font-weight: 900;
+}
+#points-table table td {
+  font-weight: 500;
+}
+
+#points-table .cta-btns .cta-btn {
+  background: #b0c8db;
+  color: black;
+}
+#points-table .cta-btns .cta-btn:hover {
+  background-color: #8bbee7;
+}
+
+/* Fixtures */
+#fixtures {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  height: auto;
+  padding: 2.5rem 0;
+}
+
+#fixtures .container .row div {
+  background-color: #e3f2fd;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+#fixtures .container h2 {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+#fixtures .container .row .col-12 h4 {
+  font-size: 20px;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-underline-offset: 3px;
+  margin-bottom: 20px;
+}
+#fixtures .container .row .col-12 p {
+  font-size: 20px;
+}
+#fixtures .container .row .col-12 p .team-names {
+  font-size: 24px;
+}
+
+/* Footer */
+.footers a {
+  color: #696969;
+}
+.footers p {
+  color: #696969;
+}
+.footers ul {
+  line-height: 30px;
+}
+#social-fb:hover {
+  color: #3b5998;
+  transition: all 0.001s;
+}
+#social-tw:hover {
+  color: #4099ff;
+  transition: all 0.001s;
+}
+#social-gp:hover {
+  color: #d34836;
+  transition: all 0.001s;
+}
+#social-em:hover {
+  color: #f39c12;
+  transition: all 0.001s;
+}
+.footers-info p {
+  width: 80%;
+}
+@media screen and (max-width: 991px) {
+  #navbar {
+    height: auto;
+  }
+}
